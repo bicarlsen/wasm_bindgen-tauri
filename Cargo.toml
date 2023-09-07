@@ -1,0 +1,15 @@
+[package]
+name = "err_dbg-ui"
+version = "0.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+tracing = "0.1.37"
+tracing-subscriber = { version = "0.3.16", features = ["time"] }
+tracing-web = "0.1.2"
+yew = { version="0.20.0", features = ["csr"] }
+yew-router = "0.17.0"
+
+[workspace]
+members = ["src-tauri"]
